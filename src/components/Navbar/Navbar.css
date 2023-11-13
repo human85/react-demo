@@ -1,0 +1,35 @@
+nav {
+  position: fixed;
+  top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  width: 1024px;
+  height: 80px;
+  border-radius: 0px 0px 10px 10px;
+  background: rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(20px);
+}
+
+a.logo {
+  color: #FFF;
+}
+
+a.logo .red {
+  color: var(--red-color)
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+nav ul a {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 800;
+}

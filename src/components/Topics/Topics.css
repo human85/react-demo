@@ -1,0 +1,13 @@
+.topics .topics-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topics .topics-image img {
+  width: 558px;
+  height: 287px;
+  object-fit: cover;
+}
+
+.topics .content-container {}
