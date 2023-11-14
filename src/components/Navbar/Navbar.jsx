@@ -1,8 +1,10 @@
-import React from "react";
-import "./Navbar.css";
-import { menuIcon, closeIcon } from "../../assets";
+import './Navbar.css'
+import { menuIcon, closeIcon } from '../../assets'
+import { useState } from 'react'
 
 const Navbar = () => {
+  const [closed, setClosed] = useState(false)
+
   return (
     <>
       <nav>
@@ -12,45 +14,53 @@ const Navbar = () => {
 
         <ul>
           <li>
-            <a href="#">About</a>
+            <a href="#topics">Course Detail</a>
           </li>
           <li>
-            <a href="#">Course Detail</a>
+            <a href="#info">About</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="#blog">Blog</a>
           </li>
           <li>
-            <a href="#">Testimonials</a>
+            <a href="#testimonials">Testimonials</a>
           </li>
         </ul>
 
-        <div className="menu-icon">
+        <div className="menu-icon" onClick={() => setClosed(false)}>
           <img src={menuIcon} />
         </div>
       </nav>
 
-      <div className="mobile-menu-container">
+      <div className={closed ? 'mobile-menu-container hidden' : 'mobile-menu-container'}>
         <ul className="menu-items">
           <li>
-            <a href="#">About</a>
+            <a onClick={() => setClosed(true)} href="#topics">
+              Course Detail
+            </a>
           </li>
           <li>
-            <a href="#">Course Detail</a>
+            <a onClick={() => setClosed(true)} href="#info">
+              About
+            </a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a onClick={() => setClosed(true)} href="#blog">
+              Blog
+            </a>
           </li>
           <li>
-            <a href="#">Testimonials</a>
+            <a onClick={() => setClosed(true)} href="#testimonials">
+              Testimonials
+            </a>
           </li>
         </ul>
-        <div className="close-icon">
+        <div className="close-icon" onClick={() => setClosed(true)}>
           <img src={closeIcon} />
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

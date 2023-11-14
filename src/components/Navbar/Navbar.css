@@ -72,6 +72,12 @@ nav ul a {
     padding: 60px 30px;
     background: var(--dark-color);
     z-index: 200;
+    translate: 0 0;
+    transition: all 0.5s linear;
+  }
+
+  .mobile-menu-container.hidden {
+    translate: 0 -100%;
   }
 
   .menu-items {

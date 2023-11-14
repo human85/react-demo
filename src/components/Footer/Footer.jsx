@@ -1,9 +1,9 @@
-import "./Footer.css";
-import { facebookLogo } from "../../assets";
+import './Footer.css'
+import { facebookLogo } from '../../assets'
 
 const Footer = () => {
   return (
-    <footer className="footer black">
+    <footer id="footer" className="footer black">
       <div className="wrapper">
         <div className="content-container">
           <div className="links">
@@ -23,9 +23,7 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="copyright">
-              This website is designed by GTCoding Ⓒ 2022
-            </div>
+            <div className="copyright">This website is designed by GTCoding Ⓒ 2022</div>
           </div>
 
           <div className="links">
@@ -54,13 +52,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="copyright mobile">
-            This website is designed by GTCoding Ⓒ 2022
-          </div>
+          <div className="copyright mobile">This website is designed by GTCoding Ⓒ 2022</div>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,9 +1,9 @@
-import { studentIcon, fileIcon, bgElement2 } from "../../assets";
-import "./Info.css";
+import { studentIcon, fileIcon, bgElement2 } from '../../assets'
+import './Info.css'
 
 const Info = () => {
   return (
-    <section className="info dark-gray">
+    <section id="info" className="info dark-gray">
       <div className="wrapper">
         <div className="content-container">
           <div className="info-content">
@@ -22,7 +22,7 @@ const Info = () => {
         <img src={bgElement2} className="bg-element-2" />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Info;
+export default Info

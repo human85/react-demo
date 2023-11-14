@@ -1,9 +1,9 @@
-import { postImg1 } from "../../assets";
-import "./Blog.css";
+import { postImg1 } from '../../assets'
+import './Blog.css'
 
 const Blog = () => {
   return (
-    <section className="blog pink">
+    <section id="blog" className="blog pink">
       <div className="wrapper">
         <h2 className="light">Latest Posts</h2>
 
@@ -12,9 +12,7 @@ const Blog = () => {
             <div className="tag">DAW</div>
             <img src={postImg1} />
             <a href="#">
-              <h3 className="post-title">
-                How To Use Drum Machine in Logic Pro X
-              </h3>
+              <h3 className="post-title">How To Use Drum Machine in Logic Pro X</h3>
             </a>
           </div>
 
@@ -22,9 +20,7 @@ const Blog = () => {
             <div className="tag">DAW</div>
             <img src={postImg1} />
             <a href="#">
-              <h3 className="post-title">
-                How To Use Drum Machine in Logic Pro X
-              </h3>
+              <h3 className="post-title">How To Use Drum Machine in Logic Pro X</h3>
             </a>
           </div>
 
@@ -32,9 +28,7 @@ const Blog = () => {
             <div className="tag">DAW</div>
             <img src={postImg1} />
             <a href="#">
-              <h3 className="post-title">
-                How To Use Drum Machine in Logic Pro X
-              </h3>
+              <h3 className="post-title">How To Use Drum Machine in Logic Pro X</h3>
             </a>
           </div>
         </div>
@@ -46,7 +40,7 @@ const Blog = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
