@@ -16,17 +16,17 @@ header .cta {
   right: 0;
   width: 450px;
   border-radius: 20px 20px 0px 0px;
-  border-top: 4px solid #FFF;
-  border-right: 4px solid #FFF;
-  border-left: 4px solid #FFF;
-  background: rgba(0, 0, 0, 0.50);
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  border-left: 4px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(25px);
   padding: 50px 40px 60px;
 }
 
 header .cta .course-name {
   position: relative;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-weight: 800;
 }
@@ -42,7 +42,7 @@ header .cta .course-name::after {
 }
 
 header .cta h1 {
-  color: #FFF;
+  color: #fff;
   font-family: Alegreya;
   font-size: 40px;
   font-weight: 700;
@@ -53,6 +53,26 @@ header .cta .demo-btn {
   padding: 10px 32px;
   border-radius: 10px;
   font-weight: 800;
-  color: #FFF;
+  color: #fff;
   background-color: var(--red-color);
+}
+
+/* Tablet Version */
+@media (max-width: 1040px) {
+  header .cta {
+    width: 356px;
+  }
+}
+
+/* Mobile Version */
+@media (max-width: 720px) {
+  header .cta {
+    width: unset;
+    left: 32px;
+    right: 32px;
+  }
+
+  header .cta h1 {
+    font-size: 32px;
+  }
 }

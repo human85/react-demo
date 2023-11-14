@@ -1,0 +1,55 @@
+.info .wrapper {
+  position: relative;
+}
+
+.info .content-container {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.info .info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.info .info-content .amount {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.info .info-content .type {
+  font-family: Alegreya;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.info .bg-element-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Smartphone Version */
+@media (max-width: 720px) {
+  .info .content-container {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .info .info-content .amount {
+    font-size: 32px;
+  }
+
+  .info .info-content .type {
+    font-size: 24px;
+  }
+
+  .info .bg-element-2 {
+    left: 32px;
+  }
+}

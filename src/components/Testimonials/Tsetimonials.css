@@ -1,0 +1,62 @@
+.testimonials .content-container {
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.testimonials .testimonial img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.testimonials .testimonial .name {
+  font-family: Alegreya;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.testimonials .testimonial .company-name {
+  margin: 7px 0;
+  font-family: Alegreya;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.testimonials .testimonial .review {
+  font-family: Alegreya;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Tablet Version */
+@media (max-width: 1040px) {
+  .testimonials .content-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .testimonials .testimonial {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+}
+
+/* Smartphone Version */
+@media (max-width: 720px) {
+  .testimonials .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials .testimonial {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .testimonials .testimonial .reviewer-details {
+    text-align: center;
+  }
+}
